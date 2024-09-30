@@ -1,0 +1,85 @@
+.experienceSection {
+  padding: 50px 20px 0px 20px;
+  margin-top: 50px;
+}
+
+.highlight {
+  color: aqua;
+}
+
+.experiencePage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.experienceCard {
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgb(251, 251, 251);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.experienceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.expInfo{
+  
+  border-bottom: 1px solid aqua;
+}
+
+.expInfo h3 {
+  font-size: 1.5rem;
+  color: aqua;
+}
+
+.expInfo h4 {
+  font-size: 1.2rem;
+  color: #555;
+}
+.expInfo p {
+  font-size: 0.8rem;
+}
+
+.expDesc {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #c6c0c0;
+}
+
+
+/* Add animation to fade-in */
+.experiencePage {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.experiencePage.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1000px) {
+  .experiencePage {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .experienceCard {
+      width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .experienceSection{
+    padding-top: 80px;
+  }
+
+}

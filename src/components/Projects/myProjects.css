@@ -1,0 +1,199 @@
+#projectSection{
+    width: 100vw;
+    min-height: 90vh;
+    max-width: 65rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3rem; 
+    /* padding-bottom: 5rem; */
+}
+
+.myProjects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projectCard {
+    width: 100%;
+    position: relative;
+    /* box-shadow: 1px 1px 12px 1px rgb(0, 255, 255); */
+    background: rgb(30, 30, 30);
+    /* overflow: hidden; */
+    border-radius: 1rem;
+    display: flex;
+    margin-top: 60px;
+    border-radius: 10px;
+    /* border: 5px solid red; */
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.projectCard::after, .projectCard::before{
+    --angle: 0deg;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-image: conic-gradient(from var(--angle),transparent 40%,white,rgb(249, 77, 140),#00ff99,#ff4545,#006aff,#ff0095,aqua);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 7s spin linear infinite;
+}
+
+.projectCard::before{
+    filter: blur(0.5rem);
+    opacity: 0.8 ;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+.projectImg {
+    width: 25vw;
+    border-radius:10px 0px 0px 10px;
+}
+
+.projectName {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    padding: 0.5rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.techNames {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 10px 0px ;
+    padding: 0.5rem 1.5rem; 
+}
+
+.tech{
+    background-color: aqua;
+    color: black;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+    /* margin-right: 5px; */
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.projectDesc {
+    font-size: 0.9rem;
+}
+
+.projectLinks {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-link {
+    font-size: 40px;
+    margin-left: 5px;
+    color: aqua;
+}
+
+.p-link:hover {
+    color: aquamarine;
+    transform: scale(1.2);
+}
+
+.projectDescription-web{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 0.9rem 1.5rem;
+    width: 88%;
+
+}
+
+.projectCard-web{
+    display: flex;
+}
+
+.projectCard-mobile{
+    display: none;
+}
+
+/* ========== */
+
+@media (max-width: 800px) {
+
+    .projectCard-web{
+        display: none;
+    }
+
+    .projectCard-mobile{
+        display: block;
+        margin-top: 10px;
+    }
+    
+    .projectCard {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+  
+    .projectImg{
+        width: 80vw;
+        max-height:250px ;
+        border-radius:10px;
+
+    }
+    .projectLinks{
+        width: 40%;
+        /* display: flex; */
+        flex-direction: row;
+        margin: 7px auto;
+        justify-content: space-around;
+    }
+    .projectDescription{
+        padding: 0px 10px ;
+
+    }
+    .projectDesc::before{
+        content: "• ";
+    }
+    .projectDesc{
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #projectSection{
+        margin-top: 30px;
+    }
+}
+

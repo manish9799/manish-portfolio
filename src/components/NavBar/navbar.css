@@ -1,0 +1,106 @@
+.navbar{
+    height: 4rem;
+    width: 100vw;
+    /* max-width: 75rem; */
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(30, 30, 30,0.8);;
+}
+
+.logo{
+    object-fit: cover;
+    margin-left: 1rem;
+    scale: 1.2;
+    text-shadow: 1.5px 1.5px 8px  aqua;
+}
+
+.desktopMenuListItem{
+    margin: 1rem;
+    cursor: pointer;
+
+}
+.desktopMenuListItem:hover,.menuListItem:hover{
+    color: aqua;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid aqua;
+    box-sizing: border-box;
+}
+
+.mobileMenuBtn{
+    /* width: 100vw; */
+    display: none;
+    color: aqua;
+    font-size: 35px;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.active{
+    color: aqua;
+}
+
+.mobileNavMenu{
+    position: absolute;
+    background-color: rgb(40,40,40);
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.menuListItem{
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.desktopMenuBtn {
+    padding: 10px 20px;
+    background-color: white; /* Button background color */
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.desktopMenuBtn:hover {
+    background-color: #6beef7;
+    transform: scale(1.05); 
+}
+
+/* media query */
+
+@media screen and (max-width:720px) {
+    .mobileMenuBtn{
+        display: block;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .desktopMenuBtn{
+        display: none;
+    }
+    .mobileMenuBtn{
+        right: 1rem;
+    }
+    .mobileNavMenu{
+        right: 1rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+    .mobileNavMenu{
+        right: 0.1rem;
+    }
+}

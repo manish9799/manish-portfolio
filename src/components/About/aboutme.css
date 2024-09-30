@@ -1,0 +1,110 @@
+#aboutMe{
+    width: 90%;
+    min-height: 85vh;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem; 
+}
+#mySkills{
+    width: 100vw;
+    height: 90vh;
+    max-width: 65rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem; 
+}
+
+.aboutMeSection{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.workingImg {
+    margin-right: 100px;
+    margin: 0 auto;
+    z-index: -1;
+    object-fit: cover;
+    width: 35%;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 1px rgb(0, 255, 255);
+}
+
+.aboutPara {
+    text-align: justify;
+    width: 50%;
+    line-height: 1.8vw;
+    background: linear-gradient(to right, rgb(37, 236, 166), rgb(255, 255, 255), rgb(244, 134, 231));
+    background-clip: text;
+    color: transparent;
+    padding-right: 2rem;
+    font-size: 1.3vw; /* Responsive font size */
+}
+
+.techCard{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1200px) {
+    .aboutPara {
+        font-size: 1.5vw;
+        width: 50%;
+        padding-right: 1rem;
+    }
+    .workingImg {
+        width: 40%;
+        height: 45vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutPara {
+        font-size: 2vw;
+        width: 55%;
+        padding-left: 0.5rem;
+        padding-right: 0rem;
+        line-height: 1.5rem;
+    }
+    .workingImg {
+        width: 40%;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutPara {
+        font-size: 2.5vw;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .workingImg {
+        width: 80%;
+        height: 55vh;
+    }
+    .aboutMeSection{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .aboutPara {
+        font-size: 3.5vw;
+        width: 95%;
+        padding-left: 1rem;
+        line-height: 5vw;
+        margin-top: 30px;
+    }
+    .workingImg {
+        width: 80%;
+        height: 35vh;
+    }
+    #aboutMe{
+        width: 100%;
+        /* position: static; */
+    }
+}
