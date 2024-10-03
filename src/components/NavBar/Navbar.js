@@ -15,7 +15,7 @@ const Navbar = () => {
             <Link activeClass='active' to='aboutMe' spy={true} smooth={true} offset={-25} duration={500}  className='desktopMenuListItem'>About</Link>
             <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-20} duration={500}  className='desktopMenuListItem'>Skills</Link>
             <Link activeClass='active' to='Experience' spy={true} smooth={true} offset={-20} duration={500}  className='desktopMenuListItem'>Experience</Link>
-            <Link activeClass='active' to='projectSection' spy={true} smooth={true} offset={-20} duration={500}  className='desktopMenuListItem'>Portfolio</Link>
+            <Link activeClass='active' to='projectSection' spy={true} smooth={true} offset={-20} duration={500}  className='desktopMenuListItem'>Projects</Link>
         </div>
         <button 
         className='desktopMenuBtn'
@@ -34,7 +34,7 @@ const Navbar = () => {
             <Link activeClass='active' to='aboutMe' spy={true} smooth={true} offset={-10} duration={500}  className='menuListItem' onClick={()=>setShowMenu(false)}>About</Link>
             <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-3} duration={500}  className='menuListItem' onClick={()=>setShowMenu(false)}>Skills</Link>
             <Link activeClass='active' to='Experience' spy={true} smooth={true} offset={-1} duration={500}  className='menuListItem' onClick={()=>setShowMenu(false)}>Experience</Link>
-            <Link activeClass='active' to='projectSection' spy={true} smooth={true} offset={-10} duration={500}  className='menuListItem' onClick={()=>setShowMenu(false)}>Portfolio</Link>
+            <Link activeClass='active' to='projectSection' spy={true} smooth={true} offset={-10} duration={500}  className='menuListItem' onClick={()=>setShowMenu(false)}>Projects</Link>
             <Link activeClass='active' to='contactSection' spy={true} smooth={true} offset={-10} duration={500}  className='menuListItem' onClick={()=>setShowMenu(false)}>Contact</Link>
         </div>
     </nav>

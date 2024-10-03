@@ -27,7 +27,9 @@ const IntroSection = () => {
           My Resume
         </a>
         </div>
-        <img src={profile} alt='Profile' className='profileImg' />
+        <div className='profileWrapper'>
+          <img src={profile} alt='Profile' className='profileImg' />
+        </div>
     </div>
   )
 }
