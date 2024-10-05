@@ -34,7 +34,7 @@
   }
 
   50% {
-    box-shadow: 1px 1px 20px 6px rgb(239, 34, 95);
+    box-shadow: 1px 1px 20px 6px rgb(97, 107, 239);
   }
 
   75% {
@@ -128,7 +128,7 @@
   font-weight: bold !important;
   font-family: monospace;
   letter-spacing: 5px !important;
-  cursor: pointer;
+  /* cursor: pointer; */
   text-transform: uppercase;
 }
 
@@ -165,7 +165,6 @@
   font-weight: bold;
   font-family: monospace;
   letter-spacing: 7px;
-  cursor: pointer;
 }
 
 .myself span:nth-child(1),
