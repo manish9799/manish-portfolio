@@ -22,7 +22,7 @@
 
 .desktopMenuListItem{
     margin: 1rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 }
 .desktopMenuListItem:hover,.menuListItem:hover{
@@ -38,7 +38,7 @@
     color: aqua;
     font-size: 35px;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-top: 0.5rem;
 }
 
@@ -61,7 +61,7 @@
 .menuListItem{
     padding: 0.5rem 3rem;
     margin: 0.25rem;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .desktopMenuBtn {
@@ -70,7 +70,7 @@
     color: black;
     border: none;
     border-radius: 15px;
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
