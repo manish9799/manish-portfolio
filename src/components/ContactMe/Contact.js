@@ -99,7 +99,7 @@ const Contact = () => {
                                 <a href="https://wa.me/+919179609799" target='_blank' rel="noreferrer">
                                     <FaWhatsapp className='redirect' style={{ marginBottom: '10px' }} />
                                 </a>
-                                <a href="tel:+917003569494" target='_blank' rel="noreferrer">
+                                <a href="tel:+919179609799" target='_blank' rel="noreferrer">
                                     <IoMdCall className='redirect' style={{ marginBottom: '10px' }} />
                                 </a>
                             </div>
